@@ -1,368 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byway Platform</title>
-    <link rel="shortcut icon" href="./assets//logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Byway Platform</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon"/>
+  <link rel="stylesheet" href="./css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="#">
-                <img src="./assets/logo.svg" alt="Byway Logo">
-            </a>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="#">
+        <img src="./assets/logo.svg" alt="Byway Logo"/>
+        <h3>Byway</h3>
+      </a>
+    </div>
+    <div class="auth">
+      <a href="#"><img src="./assets/cart.svg" alt="Cart"/></a>
+      <a href="#" class="login">Log In</a>
+      <a href="#" class="signup">Sign Up</a>
+    </div>
+  </header>
 
-            <h3>Byway</h3>
-        </div>
-        
-        
-        <div class="auth">
-            <a href="#"><img src="./assets/cart.svg" alt="cart"></a>
-            <a href="#" class="login">Log In</a>
-            <a href="#" class="signup">Sign Up</a>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="wrapper hero-flex">
+      <div class="hero-content">
+        <h1>Unlock Your Potential with Byway</h1>
+        <p>Welcome to Byway, where learning knows no bounds. We believe that education is the key to growth, and we're here to guide you on your journey to success.</p>
+        <a href="innerpage.html" class="cta-button">Start your instructor journey</a>
+      </div>
+      <div class="hero-image">
+        <img src="./assets/spotlight.png" alt="Spotlight"/>
+      </div>
+    </div>
+  </section>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Unlock Your Potential with Byway</h1>
-            <p>Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to success.</p>
-            <a href="innerpage.html" class="cta-button">Start your instructor journey</a>
-        </div>
-        <div class="hero-image">
-            <img src="./assets/spotlight.png" alt="Spotlight Image">
-        </div>
-    </section>
-
-    <section class="stats">
-        <div class="stat">  
-            <h2>250+</h2>
-            <p>Courses by our best mentors</p>
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="wrapper">
+      <div class="stats-container">
+        <div class="stat">
+          <h2>250+</h2>
+          <p>Courses by expert mentors</p>
         </div>
         <div class="stat">
-            <h2>1000+</h2>
-            <p>Courses by our best mentors</p>
+          <h2>1000+</h2>
+          <p>Active learners on the platform</p>
         </div>
         <div class="stat">
-            <h2>15+</h2>
-            <p>Categories by our best mentors</p>
+          <h2>15+</h2>
+          <p>Educational categories offered</p>
         </div>
         <div class="stat">
-            <h2>2400+</h2>
-            <p>Courses by our best mentors</p>
+          <h2>2400+</h2>
+          <p>Student success stories</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="categories">
+  <!-- Categories Section -->
+  <section class="categories">
+    <div class="wrapper">
+      <div class="cat-heading">
+        <h2>Top Categories</h2>
+        <a href="#">See all</a>
+      </div>
+      <div class="cat-list">
+        <div class="category">
+          <img src="./assets/astrology.svg" alt="Astrology"/>
+          <p>Astrology</p>
+          <span>11 Courses</span>
+        </div>
+        <div class="category">
+          <img src="./assets/devlopment.svg" alt="Development"/>
+          <p>Development</p>
+          <span>12 Courses</span>
+        </div>
+        <div class="category">
+          <img src="./assets/marketing.svg" alt="Marketing"/>
+          <p>Marketing</p>
+          <span>12 Courses</span>
+        </div>
+        <div class="category">
+          <img src="./assets/physics.svg" alt="Physics"/>
+          <p>Physics</p>
+          <span>14 Courses</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Courses -->
+  <section class="courses">
+    <div class="wrapper">
+      <div class="subcourse">
         <div class="cat-heading">
-            <h2>Top Categories</h2>
-            <a href="#">See all</a>
-
+          <h2>Top Courses</h2>
+          <a href="#">See all</a>
         </div>
         <div class="cat-list">
-            <div class="category">
-                <img src="./assets/astrology.svg" alt="Astrology Icon">
-                <p>Astrology</p>
-                <span>11 Courses</span>
+          
+          <div class="course">
+            <img src="./assets/bg.jpg" alt="Course Thumbnail"/>
+            <p>Beginner's Guide to Design</p>
+            <span>By Ronald Richards</span>
+            <div class="stars">
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <span>(1200 Ratings)</span>
             </div>
-            <div class="category">
-                <img src="./assets/devlopment.svg" alt="Development Icon">
-                <p>Development</p>
-                <span>12 Courses</span>
+            <p class="small">22 Hours · 155 Lectures · Beginner</p>
+            <p>$149.9</p>
+          </div>
+          
+           <div class="course">
+            <img src="./assets/bg.jpg" alt="Course Thumbnail"/>
+            <p>Beginner's Guide to Design</p>
+            <span>By Ronald Richards</span>
+            <div class="stars">
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <span>(1200 Ratings)</span>
             </div>
-            <div class="category">
-                <img src="./assets/marketing.svg" alt="Marketing Icon">
-                <p>Marketing</p>
-                <span>12 Courses</span>
-            </div>
-            <div class="category">
-                <img src="./assets/physics.svg" alt="Physics Icon">
-                <p>Physics</p>
-                <span>14 Courses</span>
-            </div>
-        </div>
+            <p class="small">22 Hours · 155 Lectures · Beginner</p>
+            <p>$149.9</p>
+          </div>
 
-    </section>
-    <section class="courses">
-        <div class="subcourse">
-            <div class="cat-heading">
-                <h2>Top Courses</h2>
-                <a href="#">See all</a>
-    
+           <div class="course">
+            <img src="./assets/bg.jpg" alt="Course Thumbnail"/>
+            <p>Beginner's Guide to Design</p>
+            <span>By Ronald Richards</span>
+            <div class="stars">
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <span>(1200 Ratings)</span>
             </div>
-            <div class="cat-list">
-                <div class="course">
-                    <img src="./assets/bg.jpg" alt="Course Image">
-                    <p>Beginner's Guide to Design</p>
-                    <span>By Ronald Richards</span>
-                    <div class="stars">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <span>(1200 Ratings)</span>
-                    </div>
-                    <p class="small">22 Total Hours, 155 Lectures, Beginner</p>
-                    <p>$149.9</p>
-                </div>
-                <div class="course">
-                    <img src="./assets/bg.jpg" alt="Course Image">
-                    <p>Beginner's Guide to Design</p>
-                    <span>By Ronald Richards</span>
-                    <div class="stars">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <span>(1200 Ratings)</span>
-                    </div>
-                    <p class="small">22 Total Hours, 155 Lectures, Beginner</p>
-                    <p>$149.9</p>
-                </div>
-                <div class="course">
-                    <img src="./assets/bg.jpg" alt="Course Image">
-                    <p>Beginner's Guide to Design</p>
-                    <span>By Ronald Richards</span>
-                    <div class="stars">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <span>(1200 Ratings)</span>
-                    </div>
-                    <p class="small">22 Total Hours, 155 Lectures, Beginner</p>
-                    <p>$149.9</p>
-                </div>
-                <div class="course">
-                    <img src="./assets/bg.jpg" alt="Course Image">
-                    <p>Beginner's Guide to Design</p>
-                    <span>By Ronald Richards</span>
-                    <div class="stars">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <img src="./assets/star.svg" alt="Rating">
-                        <span>(1200 Ratings)</span>
-                    </div>
-                    <p class="small">22 Total Hours, 155 Lectures, Beginner</p>
-                    <p>$149.9</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p class="small">22 Hours · 155 Lectures · Beginner</p>
+            <p>$149.9</p>
+          </div>
 
-    <section class="instructors">
-        <div class="cat-heading">
-            <h2>Top Instructors</h2>
-            <a href="#">See all</a>
-        </div>
-        <div class="cat-list">
-            <div class="instructor">
-                <img src="./assets/model-5.jpg" alt="Instructor Image">
-                <div>
-                    <div class="instructor-txt">
-                        <p>Ronald Richards</p>
-                        <span>UI/UX Designer</span>
-                    </div>
-                    <div class="homestar">
-                        <div class="star">
-                            <img src="./assets/star.svg" alt="">
-                            <p>4.9</p>
-                        </div>
-                        <p>(2400 Students)</p>
-                    </div>
-                </div>
+           <div class="course">
+            <img src="./assets/bg.jpg" alt="Course Thumbnail"/>
+            <p>Beginner's Guide to Design</p>
+            <span>By Ronald Richards</span>
+            <div class="stars">
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <img src="./assets/star.svg" alt="Star Rating"/>
+              <span>(1200 Ratings)</span>
             </div>
-            <div class="instructor">
-                <img src="./assets/model-5.jpg" alt="Instructor Image">
-                <div>
-                    <div class="instructor-txt">
-                        <p>Ronald Richards</p>
-                        <span>UI/UX Designer</span>
-                    </div>
-                    <div class="homestar">
-                        <div class="star">
-                            <img src="./assets/star.svg" alt="">
-                            <p>4.9</p>
-                        </div>
-                        <p>(2400 Students)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="instructor">
-                <img src="./assets/model-5.jpg" alt="Instructor Image">
-                <div>
-                    <div class="instructor-txt">
-                        <p>Ronald Richards</p>
-                        <span>UI/UX Designer</span>
-                    </div>
-                    <div class="homestar">
-                        <div class="star">
-                            <img src="./assets/star.svg" alt="">
-                            <p>4.9</p>
-                        </div>
-                        <p>(2400 Students)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="instructor">
-                <img src="./assets/model-5.jpg" alt="Instructor Image">
-                <div>
-                    <div class="instructor-txt">
-                        <p>Ronald Richards</p>
-                        <span>UI/UX Designer</span>
-                    </div>
-                    <div class="homestar">
-                        <div class="star">
-                            <img src="./assets/star.svg" alt="">
-                            <p>4.9</p>
-                        </div>
-                        <p>(2400 Students)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="instructor">
-                <img src="./assets/model-5.jpg" alt="Instructor Image">
-                <div>
-                    <div class="instructor-txt">
-                        <p>Ronald Richards</p>
-                        <span>UI/UX Designer</span>
-                    </div>
-                    <div class="homestar">
-                        <div class="star">
-                            <img src="./assets/star.svg" alt="">
-                            <p>4.9</p>
-                        </div>
-                        <p>(2400 Students)</p>
-                    </div>
-                </div>
-            </div>
+            <p class="small">22 Hours · 155 Lectures · Beginner</p>
+            <p>$149.9</p>
+          </div>
 
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="testimonials">
-        <div class="subtest">
-            <div class="toptest">
-                <h2>What Our Customers Say About Us</h2>
-                <div class="arrows">
-                    <img class="arrow" src="./assets/short-arrow-left.svg" alt="">
-                    <img class="arrow" src="./assets/short-arrow-right.svg" alt="">
-                </div>
-            </div>
-            <div class="test-list">
-                <div class="testimonial">
-                    <img src="./assets/quotes.svg" alt="">
-                    <p>"Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia."</p>
-                   <div class="bywayprofile">
-                        <img src="./assets/span-7.svg" alt="">
-                        <div>
-                            <span class="name">Jane Doe </span><br>
-                            <span class="Designer">Designer</span>
-                        </div>
-                   </div>
-                </div>
-                <div class="testimonial">
-                    <img src="./assets/quotes.svg" alt="">
-                    <p>"Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia."</p>
-                   <div class="bywayprofile">
-                        <img src="./assets/span-7.svg" alt="">
-                        <div>
-                            <span class="name">Jane Doe </span><br>
-                            <span>Designer</span>
-                        </div>
-                   </div>
-                </div>
-                <div class="testimonial">
-                    <img src="./assets/quotes.svg" alt="">
-                    <p>"Byway's tech courses are top-notch! As someone who's always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia."</p>
-                   <div class="bywayprofile">
-                        <img src="./assets/span-7.svg" alt="">
-                        <div>
-                            <span class="name">Jane Doe </span><br>
-                            <span>Designer</span>
-                        </div>
-                   </div>
-                </div>
-            </div>
-            </div>
+  <!-- Instructors Section -->
+  <section class="instructors">
+    <div class="wrapper">
+      <div class="section-header">
+        <h2>Top Instructors</h2>
+        <a href="#">See All</a>
+      </div>
+      <div class="instructor-list">
+        <div class="instructor-card">
+          <img src="./assets/model-5.jpg" alt="Ronald Richards">
+          <h3>Ronald Richards</h3>
+          <p>UI/UX Designer</p>
+          <div class="instructor-rating">
+            <span>⭐ 4.9</span>
+            <span>·</span>
+            <span>2400 Students</span>
+          </div>
         </div>
-    </section>
 
-    <section class="call-to-action">
-        <div class="cta">
-            <div class="imgs">
-                <img src="assets/image 10.png" alt="">
-            </div>
-            <div class="content">
-                <h2>Become an Instructor</h2>
-                <p>Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love.</p>
-                <a href="innerpage.html" class="cta-button">Start Your Instructor Journey <img src="assets/arrow-right.svg" alt="arrow"></a>
-            </div>
+        <div class="instructor-card">
+          <img src="./assets/model-5.jpg" alt="Ronald Richards">
+          <h3>Ronald Richards</h3>
+          <p>UI/UX Designer</p>
+          <div class="instructor-rating">
+            <span>⭐ 4.9</span>
+            <span>·</span>
+            <span>2400 Students</span>
+          </div>
         </div>
-        <div class="cta">
-            <div class="content">
-                <h2>Transform your life through education</h2>
-                <p class="second">Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
-                <a href="#" class="cta-button">Checkout Courses <img src="assets/arrow-right.svg" alt="arrow"></a>
-            </div>
-            <div class="imgs">
-                <img src="assets/image 11.png" alt="">
-            </div>
-        </div>
-       
-    </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <div>
-                    <div class="logo2">
-                        <a href="homescreen.html"><img src="./assets/logo.svg" alt="Byway Logo"></a>
-                        <h3>Byway</h3>
-                    </div>
-                    <p>Empowering learners through accessible and engaging online<br/> education. Byway is a leading online learning platform dedicated to providing high-quality, flexible, and affordable educational experiences.</p>
-                </div>
-                <div>
-                    <h3>Get Help</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Latest Articles</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Programs</h3>
-                    <ul>
-                        <li><a href="#">Art & Design</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">IT & Software</a></li>
-                        <li><a href="#">Languages</a></li>
-                        <li><a href="#">Programming</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact Us</h3>
-                    <p>Address: 123 Main Street, Anytown, CA 12345</p>
-                    <p>Tel: +1 (123) 456-7890</p>
-                    <p>Mail: bywayedu@webkul.in</p>
-                    <div class="social-icons">
-                        <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="./assets/github.png" alt="Twitter"></a>
-                        <a href="#"><img src="./assets/google.png" alt="Instagram"></a>
-                        <a href="#"><img src="./assets/twitter.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="./assets/microsoft.png" alt="YouTube"></a>
-                    </div>
-                </div>
-            </div>
+        <div class="instructor-card">
+          <img src="./assets/model-5.jpg" alt="Ronald Richards">
+          <h3>Ronald Richards</h3>
+          <p>UI/UX Designer</p>
+          <div class="instructor-rating">
+            <span>⭐ 4.9</span>
+            <span>·</span>
+            <span>2400 Students</span>
+          </div>
         </div>
-    </footer>
-    </body>
-    </html>
-    
+
+        <div class="instructor-card">
+          <img src="./assets/model-5.jpg" alt="Ronald Richards">
+          <h3>Ronald Richards</h3>
+          <p>UI/UX Designer</p>
+          <div class="instructor-rating">
+            <span>⭐ 4.9</span>
+            <span>·</span>
+            <span>2400 Students</span>
+          </div>
+        </div>
+
+        <div class="instructor-card">
+          <img src="./assets/model-5.jpg" alt="Ronald Richards">
+          <h3>Ronald Richards</h3>
+          <p>UI/UX Designer</p>
+          <div class="instructor-rating">
+            <span>⭐ 4.9</span>
+            <span>·</span>
+            <span>2400 Students</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>
+
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="wrapper">
+      <div class="subtest">
+        <div class="toptest">
+          <h2>What Our Customers Say <br/> About Us</h2>
+          <div class="arrows">
+            <img class="arrow" src="./assets/short-arrow-left.svg" alt="Prev"/>
+            <img class="arrow" src="./assets/short-arrow-right.svg" alt="Next"/>
+          </div>
+        </div>
+        <div class="test-list">
+          
+          <div class="testimonial">
+            <img src="./assets/quotes.svg" alt="Quotes"/>
+            <p>"Byway's tech courses are top-notch! The content is always up-to-date and engaging."</p>
+            <div class="bywayprofile">
+              <img src="./assets/span-7.svg" alt="Jane Doe"/>
+              <div>
+                <span class="name">Jane Doe</span><br>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <img src="./assets/quotes.svg" alt="Quotes"/>
+            <p>"Byway's tech courses are top-notch! The content is always up-to-date and engaging."</p>
+            <div class="bywayprofile">
+              <img src="./assets/span-7.svg" alt="Jane Doe"/>
+              <div>
+                <span class="name">Jane Doe</span><br>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="./assets/quotes.svg" alt="Quotes"/>
+            <p>"Byway's tech courses are top-notch! The content is always up-to-date and engaging."</p>
+            <div class="bywayprofile">
+              <img src="./assets/span-7.svg" alt="Jane Doe"/>
+              <div>
+                <span class="name">Jane Doe</span><br>
+                <span>Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="call-to-action wrapper">
+  <!-- Instructor Section -->
+  <div class="cta-row">
+    <div class="cta-img">
+      <img src="assets/image 10.png" alt="Instructor Image" />
+    </div>
+    <div class="cta-text">
+      <h2>Become an Instructor</h2>
+      <p>Instructors from around the world teach millions of students on Byway.<br>
+         We provide the tools and skills to teach what you love.</p>
+      <a href="#" class="cta-button dark">Start Your Instructor Journey →</a>
+    </div>
+  </div>
+
+  <!-- Student Section -->
+  <div class="cta-row reverse">
+    <div class="cta-img">
+      <img src="assets/image 11.png" alt="Student Image" />
+    </div>
+    <div class="cta-text">
+      <h2>Transform your life through education</h2>
+      <p>Learners around the world are launching new careers, advancing in<br>
+         their fields, and enriching their lives.</p>
+      <a href="#" class="cta-button dark">Checkout Courses →</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-about">
+        <div class="footer-logo">
+          <img src="./assets/logo.svg" alt="Byway Logo" />
+          <span>Byway</span>
+        </div>
+        <p>
+          Empowering learners through accessible and engaging online education.
+          Byway is a leading online learning platform dedicated to providing
+          high-quality, flexible, and affordable educational experiences.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-links">
+        <h4>Get Help</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Latest Articles</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#">Art & Design</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">IT & Software</a></li>
+          <li><a href="#">Languages</a></li>
+          <li><a href="#">Programming</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Address: 123 Main Street, Anytown, CA 12345</p>
+        <p>Tel: +1 (123) 456-7890</p>
+        <p>Mail: <a href="#">bywayedu@webkul.in</a></p>
+        <div class="footer-social">
+          <div class="social-icon"><img src="./assets/facebook.png" alt="Facebook"></div>
+          <div class="social-icon"><img src="./assets/github.png" alt="GitHub"></div>
+          <div class="social-icon"><img src="./assets/google.png" alt="Google"></div>
+          <div class="social-icon"><img src="./assets/twitter.png" alt="X"></div>
+          <div class="social-icon"><img src="./assets/microsoft.png" alt="Microsoft"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
