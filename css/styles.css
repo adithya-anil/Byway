@@ -513,30 +513,37 @@ header {
 
 
 
-/* Footer Base */
+* Footer Base */
 .footer {
   background-color: #1e293b;
   color: #ffffff;
-  padding: 60px 80px;
+  padding: 64px 32px;
   font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
+  justify-content: space-between;
+  column-gap: 45px; /* ⬅️ wider spacing between columns */
+  row-gap: 40px;
 }
 
+/* --- About Section --- */
 .footer-about {
-  flex: 1.5;
-  min-width: 250px;
+  flex: 2;
+  min-width: 320px;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .footer-logo img {
@@ -552,44 +559,56 @@ header {
 
 .footer-about p {
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #e2e8f0;
-  max-width: 300px;
+  max-width: 340px; /* ⬅️ Precise width to match line breaks */
 }
 
-/* Footer Columns */
-.footer-links,
-.footer-contact {
+/* --- Link Sections --- */
+.footer-links {
   flex: 1;
   min-width: 200px;
 }
 
-.footer-links h4,
-.footer-contact h4 {
+.footer-links h4 {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .footer-links ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .footer-links a {
-  text-decoration: none;
-  color: #e2e8f0;
   font-size: 14px;
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+/* --- Contact --- */
+.footer-contact {
+  flex: 1.2;
+  min-width: 240px;
+}
+
+.footer-contact h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .footer-contact p {
   font-size: 14px;
-  margin-bottom: 8px;
   color: #e2e8f0;
+  margin-bottom: 10px;
+  white-space: nowrap; /* ⬅️ Prevent address break */
 }
 
 .footer-contact a {
@@ -597,26 +616,23 @@ header {
   text-decoration: none;
 }
 
-/* Social Icons */
+/* --- Social Icons --- */
 .footer-social {
   display: flex;
-  justify-content: flex-start; 
-  gap: 16px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 300px; 
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: nowrap;
 }
 
 .footer-social .social-icon {
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
+  background-color: #ffffff;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -625,92 +641,7 @@ header {
 }
 
 .footer-social .social-icon img {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-}
-
-
-/* Responsive Styles */
-@media (max-width: 992px) {
-  .footer {
-    padding: 40px 40px;
-  }
-  .footer-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .footer-about p {
-    max-width: 100%;
-  }
-  .footer-logo span {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .hero, .cta, .stats, .cat-list, .test-list, .instructors .cat-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .course, .category, .testimonial, .instructor {
-        width: 90% !important;
-    }
-
-    .cta-row,
-    .cta-row.reverse {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .cta-img img {
-      max-width: 100%;
-    }
-    .footer-content {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .hero-content h1 {
-        font-size: 30px;
-    }
-    .category {
-    width: 100%;
-    } 
-}
-
-@media screen and (max-width: 768px) {
-  .footer-social {
-    justify-content: center;
-    margin-top: 16px;
-  }
-}
-
-
-@media (max-width: 576px) {
-  .footer {
-    padding: 30px 20px;
-  }
-  .footer-logo img {
-    width: 28px;
-    height: 28px;
-  }
-  .footer-logo span {
-    font-size: 16px;
-  }
-  .footer-about p,
-  .footer-links a,
-  .footer-contact p {
-    font-size: 13px;
-  }
-  .footer-social img {
-    width: 24px;
-    height: 24px;
-  }
 }

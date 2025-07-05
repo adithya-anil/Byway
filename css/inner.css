@@ -343,12 +343,6 @@ header .logo img {
 }
 
 /* Reviews */
-.review-section {
-  background-color: #ffffff;
-  padding: 64px 80px;
-  font-family: 'Inter', sans-serif;
-}
-
 .topr {
   font-size: 24px;
   font-weight: 600;
@@ -356,24 +350,101 @@ header .logo img {
   margin-bottom: 40px;
 }
 
-.subreview {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .review {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 64px;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
+/* Left column: Ratings */
 .review-summary {
-  flex: 1;
-  max-width: 300px;
+  flex: 0 0 260px;
 }
 
+/* Right column: Reviews */
+.review-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Each review card */
+.review-item {
+  display: flex;
+  gap: 16px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.reviewer-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.review-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.reviewer-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-rating img {
+  width: 16px;
+  height: 16px;
+}
+
+.review-date {
+  font-size: 13px;
+  color: #000;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Rating overall section */
 .rating-overall {
   display: flex;
   align-items: center;
@@ -394,9 +465,10 @@ header .logo img {
 
 .review-count {
   font-size: 16px;
-  color: #6B7280;
+  color: #000;
 }
 
+/* Breakdown stars */
 .rating-breakdown {
   display: flex;
   flex-direction: column;
@@ -420,82 +492,12 @@ header .logo img {
 }
 
 .percentage {
+  font-size: 14px;
+  color: #000;
   margin-left: 8px;
-  font-size: 14px;
-  color: #4B5563;
 }
 
-.review-list {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.review-item {
-  display: flex;
-  gap: 20px;
-  padding: 24px 0;
-  border-bottom: 1px solid #e5e7eb; /* light gray border between reviews */
-}
-
-.review-profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 80px;
-}
-
-.reviewer-img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  margin-bottom: 6px;
-}
-
-.review-profile h3 {
-  font-size: 14px;
-  font-weight: 600;
-  color: #111827;
-  text-align: center;
-  margin: 0;
-}
-
-.review-content {
-  flex: 1;
-}
-
-.review-subcontent {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
-.review-rating {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  color: #fbbf24; /* yellow-ish tone for star text */
-}
-
-.review-rating img {
-  width: 16px;
-  height: 16px;
-}
-
-.review-date {
-  font-size: 13px;
-  color: #9ca3af; /* gray-400 */
-}
-
-.review-text {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #4b5563; /* gray-600 */
-}
-
+/* Button */
 .view-more {
   align-self: flex-start;
   padding: 10px 20px;
@@ -511,7 +513,7 @@ header .logo img {
 }
 
 .view-more:hover {
-  background-color: #2563EB;
+  background-color: #2563eb;
   color: #ffffff;
 }
 
@@ -649,116 +651,133 @@ header .logo img {
 
 /* Footer Base */
 .footer {
-    background-color: #1e293b;
-    color: #ffffff;
-    padding: 60px 80px;
-    font-family: 'Inter', sans-serif;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 64px 32px;
+  font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 45px; /* ⬅️ wider spacing between columns */
+  row-gap: 40px;
 }
 
+/* --- About Section --- */
 .footer-about {
-    flex: 1.5;
-    min-width: 250px;
+  flex: 2;
+  min-width: 320px;
 }
 
 .footer-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .footer-logo img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .footer-logo span {
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
 .footer-about p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #e2e8f0;
-    max-width: 400px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #e2e8f0;
+  max-width: 340px; /* ⬅️ Precise width to match line breaks */
 }
 
-.footer-links,
-.footer-contact {
-    flex: 1;
-    min-width: 200px;
+/* --- Link Sections --- */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
 }
 
-.footer-links h4,
-.footer-contact h4 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 12px;
+.footer-links h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .footer-links ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li {
-    margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .footer-links a {
-    text-decoration: none;
-    color: #e2e8f0;
-    font-size: 14px;
+  font-size: 14px;
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+/* --- Contact --- */
+.footer-contact {
+  flex: 1.2;
+  min-width: 240px;
+}
+
+.footer-contact h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .footer-contact p {
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #e2e8f0;
+  font-size: 14px;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+  white-space: nowrap; /* ⬅️ Prevent address break */
 }
 
 .footer-contact a {
-    color: #e2e8f0;
-    text-decoration: none;
+  color: #e2e8f0;
+  text-decoration: none;
 }
 
-/* Social Icons */
+/* --- Social Icons --- */
 .footer-social {
-    display: flex;
-    justify-content: flex-start;
-    gap: 16px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1900px;
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: nowrap;
 }
 
 .footer-social .social-icon {
-    background-color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease-in-out;
+  background-color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
 }
 
 .footer-social .social-icon:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .footer-social .social-icon img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
