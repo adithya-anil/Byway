@@ -781,3 +781,199 @@ header .logo img {
   height: 18px;
   object-fit: contain;
 }
+
+/* ----------------- Responsive Styles ----------------- */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .hero,
+  .spot,
+  .testimonials,
+  .courses {
+    padding: 40px 40px;
+  }
+
+  .mains {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .cta-button,
+  .buy,
+  .cart {
+    font-size: 15px;
+  }
+
+  .instructorsimg {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .review-summary,
+  .review-list {
+    width: 100%;
+  }
+
+  .test-list {
+    justify-content: center;
+  }
+
+  .testimonial {
+    width: 45%;
+  }
+
+  .course .stars span {
+    font-size: 12px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .share {
+    flex-direction: column;
+    height: auto;
+    gap: 4px;
+  }
+
+  .share p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Mobiles (≤768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero,
+  .spot,
+  .testimonials,
+  .courses {
+    padding: 30px 20px;
+  }
+
+  .mains {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .course-intro .intro {
+    font-size: 24px;
+  }
+
+  .introp,
+  .details p,
+  .instructorpage p,
+  .review-text {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .review-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .instructorsimg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instructorimage {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-about p,
+  .footer-contact p,
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .cat-list .course {
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices (≤480px) */
+@media (max-width: 480px) {
+  .course-intro .intro {
+    font-size: 20px;
+  }
+
+  .rating {
+    font-size: 26px;
+  }
+
+  .testimonial {
+    padding: 16px;
+  }
+
+  .review-text {
+    font-size: 13px;
+  }
+
+  .cta-button,
+  .cart,
+  .buy {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .topr {
+    font-size: 20px;
+  }
+
+  .review-rating,
+  .review-date {
+    font-size: 12px;
+  }
+}
