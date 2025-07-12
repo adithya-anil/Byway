@@ -680,6 +680,12 @@ header .logo img {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  text-decoration: none;       
+  color: inherit;              
+}
+
+.footer-logo:hover {
+  opacity: 0.9;                 
 }
 
 .footer-logo img {
